@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="imagen/logo.png">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/hand-holding-heart?f=classic&s=solid">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     
+     <!-- Los iconos tipo Solid de Fontawesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <!-- Nuestro css-->
+      <link rel="stylesheet" type="text/css" href="estilos.css" th:href="@{estilos.css}">
+    
+    <title>PazGuard</title>
+</head>
+<body>
+
+  <!--<footer><script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1722621-6OVYDFM096F6D5C0/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+    </script></footer>-->
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1 style="font-size: 30px;">PazGuard</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#quienes-somos" onclick="seleccionar(this)">¿Quiénes somos?</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Apoyo</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">Publicaciones</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                           <li><a href="logeate.html" onclick="seleccionar(this)">Iniciar Sesión</a></li>
+                            <li><a href="registrar.html" onclick="seleccionar(this)">Registrate</a></li>
+                           
+                        </ul> 
+                    </nav>
+                    <!--icono del menu responsivo-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                   
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>A la plataforma Web
+                <span>PazGuard</span></h2>
+                <p class="descripcion">Nuestros propósito de servicio es promover la concentización de la NO VIOLENCIA además de permitirle denunciar si es testigo de alguna.</p>
+                <!--ingresando a la parte de servicios-->
+                <a href="#servicios">Ir a Centros de Ayuda</a>
+            </div>
+        </div>
+    </section>
+<!--seccion servicios-->
+<section id="quienes-somos">
+    <div class="contenedor-foto">
+        <img src="imagen/foto.jpg" alt="">
+    </div>
+    <div class="quienes-somos">
+        <p class="titulo-seccion">Sobre Nosotros</p>
+        <h2>Hola,somos <span>Paz Guard</span></h2>
+        <h3>MISIÓN</h3>
+        <p>Es prevenir la violencia y promover la no violencia a través de una aplicación web que eduque, concientice y permita denuncias rápidas y confidenciales en situaciones de peligro.</p>
+          <h3>VISIÓN</h3>
+        <p>Es ser líderes en la prevención de la violencia, empoderando a las personas para crear comunidades seguras y pacíficas a través de nuestra plataforma. Queremos un mundo donde la no violencia sea la norma. </p>
+        
+        <a href="documento/presentación.pdf">Descargar</a>
+    </div>
+</section>  
+                                            <!--CENTROS DE AYUDA_ UBICACIONES_-->
+<section id="servicios">
+<h3 class="titulo-seccion">CENTROS DE AYUDA</h3>
+<div class="fila">
+    <!--1-->
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+      <h4>Defensoría de la Niñez y Adolescencia </h4><hr>
+      <ul class="servicios-tag">
+        <li>La Paz -  El Alto</li>
+        
+      </ul>
+      <p>Se encarga de proteger los derechos de los niños y adolescentes en Bolivia y ofrece servicios de apoyo a víctimas menores de edad que sufren violencia. <br><br> Linea Gratuita 156</p>
+      <!--LINK al h4-->
+      <div class="redes">
+        <a href="https://lapaz.bo/blog/defensoria-de-la-ninez-y-adolescencia/"><i class="fa-solid fa-angles-right"></i></a></div>
+    </div>
+    <!--2-->
+    <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <h4>Servicios Legales Integrales Municipales (SLIMS)</h4><hr>
+        <ul class="servicios-tag">
+          <li>La Paz -  El Alto</li>
+        </ul>
+        <p>Es la instancia que integra funcional y operativamente los servicios municipales de Defensa y Protección frente a toda forma de violencia.
+          Servicio legal integral municipal, se constituye en organismo de apoyo para la lucha contra la violencia en la familia siendo un servicio municipal permanente de defensa psicosocial y legal.<br><br> Linea Gratuita 156</p>
+        <div class="redes">
+          <a href="https://lapaz.bo/blog/servicio-legal-integral-municipal/"><i class="fa-solid fa-angles-right"></i></a></div>
+      
+      </div>
+      <!--3-->
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <h4>Casa de la Mujer </h4><hr>
+        <ul class="servicios-tag">
+          <li>La Paz -  El Alto</li>
+        </ul>
+        <p>La Casa de la Mujer atiende a las mujeres en situación de violencia machista de manera integral y gratuita para permitir su acceso a la justicia.<br><br> Linea Gratuita 156</p>
+        <div class="redes">
+          <a href="https://gregorias.org.bo/quienes-somos/"><i class="fa-solid fa-angles-right"></i></a></div>
+      
+      </div>
+      <hr>
+      
+</div>
+<div class="fila">
+  <!--1-->
+  <div class="servicio">
+    <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+    <h4> Fuerza Especial De Lucha Contra La Violencia</h4><hr>
+    <ul class="servicios-tag">
+      <li>La Paz -  El Alto</li>
+    </ul>
+    <p>La FELCV es un organismo especializado de la Policía Bolivia encargado de la prevención, auxilio e investigación y aprehensión de los presuntos responsables de hechos de violencia en razón de género contra las mujeres, contra las personas LGBTI y, en general contra toda persona que sufra violencia en razón de género y se encuentre en situación de vulnerabilidad.</p>
+    <div class="redes">
+      <a href="http://felcv.policia.bo/index.php/a-quienes-atendemos/"><i class="fa-solid fa-angles-right"></i></a></div>
+  
+  </div>
+  <!--2-->
+  <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+      <h4>Gregoria Apaza</h4><hr>
+      <ul class="servicios-tag">
+        <li>La Paz -  El Alto</li>
+      </ul>
+      <p>La organización se dedica a apoyar los procesos que favorezcan el reconocimiento, la exigibilidad, goce y ejercicio de los derechos de las mujeres.<br><br>Teléfonos:
+        2840351 - 2840441 - 2841963</p>
+      <div class="redes">
+        <a href="https://lapaz.bo/blog/defensoria-de-la-ninez-y-adolescencia/"><i class="fa-solid fa-angles-right"></i></a></div>
+    
+    </div>
+    <!--3-->
+    <div class="servicio">
+      <span class="icono"><i class="fa-solid fa-hand-holding-heart"></i></span>
+      <h4>Centro Juana Azurduy </h4><hr>
+      <ul class="servicios-tag">
+        <li>La Paz -  El Alto</li>
+      </ul>
+      <p>Es una organización no gubernamental que trabaja en defensa de los derechos humanos de las mujeres en Bolivia. El Centro Juana Azurduy tiene como objetivo prevenir y erradicar toda forma de violencia hacia las mujeres. <br></p>
+      <div class="redes">
+        <a href="https://lapaz.bo/blog/defensoria-de-la-ninez-y-adolescencia/"><i class="fa-solid fa-angles-right"></i></a></div>
+
+    </div>
+    <hr>
+    
+</div>
+</section>
+
+
+
+<!---SECCION HABILIDADES--->
+  <div class="contenedor-skills" id="skills">
+    <h3>TIPOS DE VIOLENCIA MÁS FRECUENTES</h3>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Violencia Interpersonal</p>
+        <span class="porcentaje">65%</span>     
+      </div>
+      <div class="barra">
+        <div id="uno" class="barra-progreso1"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Violencia Psicológica</p>
+        <span class="porcentaje">80%</span>     
+      </div>
+      <div class="barra">
+        <div id="dos" class="barra-progreso2"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Violencia Económica</p>
+        <span class="porcentaje">70%</span>     
+      </div>
+      <div class="barra">
+        <div id="tres" class="barra-progreso3"></div>
+      </div>
+    </div>
+  </div>
+  <!---SECCION PORTAFOLIO sustituido por PUBLICACIONES Y/O ARTICULOS--->
+  <section id="portafolio">
+    <h3 class="titulo-seccion">PUBLICACIONES</h3>
+
+     <div class="fila">
+     
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto2.jpg" alt="">
+        <div class="info">
+          <h4>Proyecto 2</h4>
+          <p>Participacion en "Fundación Sofia" <a href="imagen/proyecto2.jpg" >Descargar</a></p>
+        </div>
+      </div>
+      
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto3.jpg" alt="">
+
+        <div class="info">
+          <h4>Descripcion de material de conferencia</h4>
+          <p><a href="documento/uno.pdf" target="_blank">Descargar Documento PDF</a></p>
+        </div>
+      </div>
+     
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto4.jpg" alt="">
+        <div class="info">
+          <h4>Descripcion del proyecto 4</h4>
+          <p><a href="documento/uno.pdf" >Descargar imagen</a></p>
+        </div>
+      </div>
+    
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto5.jpg" alt="">
+        <div class="info">
+          <h4>Afiche</h4>
+          <p>Tipos de Violencia <a href="imagen/proyecto5.jpg" >Descargar libro</a></p>
+        </div>
+      </div>
+
+    </div> 
+    
+    <!--LOCO-->
+
+    <div class="fila">
+      <!--1-->
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto6.jpg" alt="">
+        <div class="info">
+          <h4>Afiche de prevención de Violencia Infantil</h4>
+          <p><a href="imagen/proyecto6.jpg">Descargar Afiche</a></p>
+        </div>
+      </div>
+      <!--2-->
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto7.jpg" alt="">
+        <div class="info">
+          <h4>Afiche</h4>
+          <p><a href="imagen/proyecto7.jpg">Descargar Afiche</a></p>
+        </div>
+      </div>
+      <!--3-->
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto8.jpg" alt="">
+        <div class="info">
+          <h4>Triptico de Violencómetro</h4>
+          <p><a href="documento/uno.pdf" target="_blank">Descargar Documento PDF</a></p>
+        </div>
+      </div>
+      <!--4-->
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="imagen/proyecto9.jpg" alt="">
+        <div class="info">
+          <h4>Folleto que habla de la no violencia</h4>
+          <p><a href="documento/uno.pdf" target="_blank">Descargar Documento PDF</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--EVENTOS-->
+ 
+ <button class="boton-eventos"><a href="evento.html">EVENTOS</a></button>
+<!--EVNTOS-->
+  <!--contacto-->
+  <section id="contacto">
+<h3 class="titulo-seccion">Contactanos ahora</h3>
+<div class="contenedor-form">
+  <form action="">
+  <div class="fila mitad">
+    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+  </div>
+  <div class="fila">
+    <input type="text" placeholder="Tema..." class="input-full">
+  </div>
+  <div class="fila">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+  </div>
+  <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+</form>
+</div>
+  </section>
+ 
+  <!--LOGIN-->
+  
+  <!--log-in
+ <section id="log-in">
+  <div class="redes">
+
+    <div class="modal-dialog text-center">
+      <div class="col-sm-8 main-section">
+          <div class="modal-content">
+              <div class="col-12 user-img">
+                  <img src="static/img/user.png" th:src="@{/img/user.png}"/>
+              </div>
+              <form class="col-12" th:action="@{/login}" method="get">
+                  <div class="form-group" id="user-group">
+                      <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
+                  </div>
+                  <div class="form-group" id="contrasena-group">
+                      <input type="password" class="form-control" placeholder="Contrasena" name="password"/>
+                  </div>
+                  <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+              </form>
+              <div class="col-12 forgot">
+                  <a href="#">Recordar contrasena?</a>
+              </div>
+              <div th:if="${param.error}" class="alert alert-danger" role="alert">
+              Invalid username and password.
+          </div>
+          <div th:if="${param.logout}" class="alert alert-success" role="alert">
+              You have been logged out.
+          </div>
+          </div>
+      </div>
+  </div>
+
+</section>-->
+
+<!--<section id="registrate">
+<div class="redes"> <a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+</section>-->
+
+<!---FORMULARIO D REGISTRO
+<section id="registrate">
+  <div class="formulario">
+      <h2>Regístrate</h2>
+      <form id="registrationForm" action="#" method="post">
+          <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-group">
+              <label for="correo">Correo Electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+          </div>
+
+          <div class="form-group">
+              <label for="contrasena">Contraseña:</label>
+              <input type="password" id="contrasena" name="contrasena" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmarContrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+        </div>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</div>
+<div id="mensajeRegistro"></div>
+</section>-->
+
+<!---->
+
+<!--sseccion footer-->
+<footer><p>Todos los derechos reservados - 2023</p>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+</footer>
+<footer><script>
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+      s.addEventListener('load', function() {
+        var myLandbot = new Landbot.Livechat({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1722621-6OVYDFM096F6D5C0/index.json',
+        });
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  }
+  </script></footer>
+<script src="script.js"></script>
+</body>
+</html>

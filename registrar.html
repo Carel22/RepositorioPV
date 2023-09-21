@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagen/logo.png">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/hand-holding-heart?f=classic&s=solid">
+     <!--JQUERY-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     
+     <!-- Los iconos tipo Solid de Fontawesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ 
+     <!-- Nuestro css-->
+     <link rel="stylesheet" type="text/css" href="estilos.css" th:href="@{estilos.css}">
+     <link rel="stylesheet"  href="index.html" th:href="@{index.html}">
+    <title>Registro</title>
+</head>
+<body>
+                                              <!---FORMULARIO D REGISTRO-->
+  <!--EJEMPLO DE PASSOWRD: Pa$$w0rd! -->                                            
+
+    <section id="registrate">
+
+        <div class="container">
+            <h2>Registro</h2>
+            <form id="registroForm">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+    
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+    
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+
+                <label for="estadoCivil">Estado Civil:</label>
+                <select id="estadoCivil" name="estadoCivil" required>
+                    <option value="soltero">Soltero</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viudo">Viudo</option>
+                </select>
+    
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div id="customAlert" class="custom-alert">
+            <span id="customAlertMessage"></span>
+        </div>
+    
+    </section>
+
+  <!---->
+  <script src="script.js"></script>
+</body>
+</html>
